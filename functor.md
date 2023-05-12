@@ -1,3 +1,9 @@
+
+
+
+
+
+
 `std::function` 是 C++11 引入的一个非常有用的特性，它可以被用来包装所有可调用的目标，包括普通函数、lambda 函数、函数对象（functor）以及成员函数指针。`std::function` 可以持有并调用任何 Callable 目标。
 
 在你的代码中，`void first(std::function<void()> printFirst)` 定义了一个名为 `first` 的函数，它接收一个参数 `printFirst`。这个参数是一个 `std::function` 对象，它可以接收任何没有参数且返回类型为 `void` 的 Callable 目标。

@@ -7,6 +7,8 @@ Cpp related knowledge, powered by ChatGPT4. Contents are in English.
 * [`static/dynamic/const/reinterpret_cast`](./docs/cast.md)
 * [`operator`](docs/operator.md)
 * [`const & constexpr`](docs/const&constexpr.md)
+* [`extern`](docs/extern.md)
+* [`static`](docs/static.md)
 
 ## STL
 

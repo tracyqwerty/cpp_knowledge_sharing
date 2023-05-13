@@ -120,5 +120,5 @@ Remember, the key idea here is that if something has a name and a specific, iden
 
 For advanced learners: https://zhuanlan.zhihu.com/p/335994370
 
-
+See also: https://learn.microsoft.com/en-us/cpp/cpp/lvalues-and-rvalues-visual-cpp?view=msvc-170
 

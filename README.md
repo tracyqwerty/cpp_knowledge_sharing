@@ -5,6 +5,7 @@ Cpp related knowledge, powered by ChatGPT4. Contents are in English.
 
 * [`virtual`](docs/virtual.md)
 * [`static/dynamic/const/reinterpret_cast`](./docs/cast.md)
+* [`operator`](docs/operator.md)
 
 ## STL
 

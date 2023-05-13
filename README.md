@@ -11,7 +11,14 @@ Cpp related knowledge, powered by ChatGPT4. Contents are in English.
 - [`std::function`](docs/function.md)
 - [`std::bind`](docs/bind.md)
 - [`std::move`](docs/move.md)
-- 
+
+## Template
+
+Just some basic ideas. It doesn't cover Template Metaprogramming. 
+
+For that please refer to: [CppTemplateTutorial](https://github.com/wuye9036/CppTemplateTutorial)
+
+* 
 
 ## Features and Techniques
 
@@ -29,7 +36,7 @@ https://learn.microsoft.com/en-us/cpp/cpp
 
 
 
-
+## TODO
 
 IEEE 754
 

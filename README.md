@@ -9,6 +9,7 @@ Cpp related knowledge, powered by ChatGPT4. Contents are in English.
 * [`const & constexpr`](docs/const&constexpr.md)
 * [`extern`](docs/extern.md)
 * [`static`](docs/static.md)
+* [`null`](docs/null.md)
 
 ## STL
 
@@ -51,6 +52,8 @@ nullptr null
 
 https://learn.microsoft.com/en-us/cpp/cpp/keywords-cpp?view=msvc-170
 
-constexpr
+for_each, the default traversal algorithm (along with range-based for loops). 
 
-for_each, the default traversal algorithm (along with range-based for loops). transform, for not-in-place modification of container elements find_if, the default search algorithm.
+transform, for not-in-place modification of container elements
+
+find_if, the default search algorithm.

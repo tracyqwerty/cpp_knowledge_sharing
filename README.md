@@ -4,19 +4,39 @@ Cpp related knowledge, powered by ChatGPT4. Contents are in English.
 ## Keywords
 
 * [`virtual`](docs/virtual.md)
+* [`static/dynamic/const/reinterpret_cast`](./docs/cast.md)
 
 ## STL
 
 - [`std::function`](docs/function.md)
 - [`std::bind`](docs/bind.md)
 - [`std::move`](docs/move.md)
+- 
 
 ## Features and Techniques
 
-- [`Type Casting`](./docs/cast.md)
-- [`Overload & Override`](./docs/overload&ride.md)
-- [`Lambda Expressions`](./docs/lambda.md)
+- [`overload & override`](./docs/overload&ride.md)
+- [`lambda expressions`](./docs/lambda.md)
 - [`lvalue & rvalue`](docs/l&rvalue.md)
 - [`move semantics`](docs/move_semantics.md)
 - [`perfect forwarding`](docs/perfect_forwarding.md)
 
+
+
+## References
+
+https://learn.microsoft.com/en-us/cpp/cpp
+
+
+
+
+
+IEEE 754
+
+nullptr null
+
+https://learn.microsoft.com/en-us/cpp/cpp/keywords-cpp?view=msvc-170
+
+constexpr
+
+for_each, the default traversal algorithm (along with range-based for loops). transform, for not-in-place modification of container elements find_if, the default search algorithm.

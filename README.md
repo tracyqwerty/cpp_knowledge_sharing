@@ -18,7 +18,8 @@ Just some basic ideas. It doesn't cover Template Metaprogramming.
 
 For that please refer to: [CppTemplateTutorial](https://github.com/wuye9036/CppTemplateTutorial)
 
-* 
+* [`template`](docs/template.md)
+* [`specialization & partial specialization`](docs/specialization.md)
 
 ## Features and Techniques
 

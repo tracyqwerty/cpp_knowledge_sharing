@@ -70,8 +70,6 @@ Here, `size` is a non-type parameter that determines the size of the array.
 
 Templates are a complex topic, and there's a lot more to them, like variadic templates, member function templates, template aliases, etc. But this should give you a good basic understanding of what templates are and how they work.
 
-
-
 ## Tips
 
 ### Template Function Cannot be Virtual

@@ -20,6 +20,7 @@ For that please refer to: [CppTemplateTutorial](https://github.com/wuye9036/CppT
 
 * [`template`](docs/template.md)
 * [`specialization & partial specialization`](docs/specialization.md)
+* [`two-phase name lookup`](docs/two_phase.md)
 
 ## Features and Techniques
 

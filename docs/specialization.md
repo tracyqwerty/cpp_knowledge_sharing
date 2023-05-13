@@ -63,7 +63,7 @@ void foo(T a, T b) { /* specialization for two arguments of the same type */ }
 
 Here, it's clear what you want: the first version of `foo` should be used for arguments of different types, and the second version should be used for arguments of the same type. However, this is not how C++ function template resolution works.
 
-In C++, function templates are not chosen based on the "best match" like function overloads are. Instead, they are chosen based on the first match found by the compiler. If partial specialization were allowed, it would be ambiguous which version of `foo` to use when you call it with two arguments of the same type.
+**In C++, function templates are not chosen based on the "best match" like function overloads are. Instead, they are chosen based on the first match found by the compiler. If partial specialization were allowed, it would be ambiguous which version of `foo` to use when you call it with two arguments of the same type.**
 
 To achieve the desired effect, you can use function overloading and template specialization:
 

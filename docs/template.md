@@ -69,3 +69,21 @@ private:
 Here, `size` is a non-type parameter that determines the size of the array.
 
 Templates are a complex topic, and there's a lot more to them, like variadic templates, member function templates, template aliases, etc. But this should give you a good basic understanding of what templates are and how they work.
+
+
+
+## Tips
+
+### Template Function Cannot be Virtual
+
+A virtual function in C++ is a member function which is declared within a base class and is re-defined (Overriden) by a derived class. When you refer to a derived class object using a pointer or a reference to the base class, you can call a virtual function for that object and execute the derived class's version of the function.
+
+Templates, on the other hand, are expanded at compile time. This means that the compiler creates a new version of the function for each type (or set of types) you use with it. 
+
+**These two features of C++—virtual functions and templates—don't play well together due to their nature:**
+
+1. **Compile-Time vs Runtime:** Templates are a compile-time construct while virtual functions are a runtime concept. The compiler needs to know the exact type to generate the code for a template function, but in case of a virtual function, the exact type is not known until runtime.
+
+2. **Declaration in Base Class:** A virtual function must be declared in the base class, and the base class should not have any knowledge about the derived classes. However, a template function in a base class would need to know about all the types that the derived classes might use, which is not possible or desirable.
+
+Because of these reasons, you can't have virtual function templates in C++. Alternatively, you can have a virtual function that calls a template function. This way you can get some of the benefits of both features.

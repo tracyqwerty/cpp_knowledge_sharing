@@ -12,6 +12,7 @@ Cpp related knowledge, powered by ChatGPT4. Contents are in English.
 - [`std::function`](docs/function.md)
 - [`std::bind`](docs/bind.md)
 - [`std::move`](docs/move.md)
+- [`std::unique_ptr, std::shared_ptr & std::weak_ptr`](docs/smart_ptr.md)
 
 ## Template
 

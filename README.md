@@ -35,6 +35,7 @@ For that please refer to: [CppTemplateTutorial](https://github.com/wuye9036/CppT
 - [`lvalue & rvalue`](docs/l&rvalue.md)
 - [`move semantics`](docs/move_semantics.md)
 - [`perfect forwarding`](docs/perfect_forwarding.md)
+- [`memory management`](docs/memory.md)
 
 
 
@@ -47,8 +48,6 @@ https://learn.microsoft.com/en-us/cpp/cpp
 ## TODO
 
 IEEE 754
-
-nullptr null
 
 https://learn.microsoft.com/en-us/cpp/cpp/keywords-cpp?view=msvc-170
 

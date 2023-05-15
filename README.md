@@ -59,3 +59,9 @@ for_each, the default traversal algorithm (along with range-based for loops).
 transform, for not-in-place modification of container elements
 
 find_if, the default search algorithm.
+
+
+
+reading last left here：
+
+https://learn.microsoft.com/en-us/cpp/cpp/temporary-objects?view=msvc-170

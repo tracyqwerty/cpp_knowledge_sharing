@@ -36,12 +36,15 @@ For that please refer to: [CppTemplateTutorial](https://github.com/wuye9036/CppT
 - [`move semantics`](docs/move_semantics.md)
 - [`perfect forwarding`](docs/perfect_forwarding.md)
 - [`memory management`](docs/memory.md)
+- [`RAII & LIFO`](docs/RAII&LIFO.md)
 
 
 
 ## References
 
 https://learn.microsoft.com/en-us/cpp/cpp
+
+https://github.com/Light-City/CPlusPlusThings
 
 
 

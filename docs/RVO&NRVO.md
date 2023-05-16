@@ -60,3 +60,5 @@ Without NRVO, the `CreateObject()` function would create `result`, and then a co
 
 It's important to note that while RVO and NRVO are widely supported and generally reliable, they are not required by the C++ standard (as of my knowledge cutoff in September 2021), meaning that it's ultimately up to the compiler whether to apply these optimizations or not. However, almost all modern compilers support these optimizations and apply them where possible to improve performance.
 
+
+

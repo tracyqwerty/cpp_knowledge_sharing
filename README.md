@@ -38,6 +38,7 @@ For that please refer to: [CppTemplateTutorial](https://github.com/wuye9036/CppT
 - [`memory management`](docs/memory.md)
 - [`Resource Acquisition Is Initialization (RAII) & Last In, First Out (LIFO)`](docs/RAII&LIFO.md)
 - [`Return Value Optimization (RVO) and Named Return Value Optimization (NRVO)`](docs/RVO&NRVO.md)
+- [`overload resolution`](docs/overload_resolution.md)
 
 ## Interesting Questions
 

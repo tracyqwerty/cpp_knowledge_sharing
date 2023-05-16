@@ -44,6 +44,8 @@ For that please refer to: [CppTemplateTutorial](https://github.com/wuye9036/CppT
 
 * [Why virtual member function can not be used with template?](ques/q1.md)
 * [`vector<string> v = str_split("1,2,3");` The memory will be where, why?](ques/q2.md)
+* [Can Constructors and Destructors be virtual?](ques/q3.md)
+* [What is the difference between header files `#include <X.h>` and `#include <cX>`?](ques/q4.md)
 
 ## References
 

@@ -7,9 +7,12 @@ Cpp related knowledge, powered by ChatGPT4. Contents are in English.
 * [`static/dynamic/const/reinterpret_cast`](./docs/cast.md)
 * [`operator`](docs/operator.md)
 * [`const & constexpr`](docs/const&constexpr.md)
+* [`noexept`](docs/noexept.md)
+* [`volatile`](docs/volatile.md)
 * [`extern`](docs/extern.md)
 * [`static`](docs/static.md)
 * [`null`](docs/null.md)
+
 
 ## STL
 
@@ -39,6 +42,7 @@ For that please refer to: [CppTemplateTutorial](https://github.com/wuye9036/CppT
 - [`Resource Acquisition Is Initialization (RAII) & Last In, First Out (LIFO)`](docs/RAII&LIFO.md)
 - [`Return Value Optimization (RVO) and Named Return Value Optimization (NRVO)`](docs/RVO&NRVO.md)
 - [`overload resolution`](docs/overload_resolution.md)
+- [`scope`](docs/scope.md)
 
 ## Interesting Questions
 

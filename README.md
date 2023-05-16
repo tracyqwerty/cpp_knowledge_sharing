@@ -36,9 +36,13 @@ For that please refer to: [CppTemplateTutorial](https://github.com/wuye9036/CppT
 - [`move semantics`](docs/move_semantics.md)
 - [`perfect forwarding`](docs/perfect_forwarding.md)
 - [`memory management`](docs/memory.md)
-- [`RAII & LIFO`](docs/RAII&LIFO.md)
+- [`Resource Acquisition Is Initialization (RAII) & Last In, First Out (LIFO)`](docs/RAII&LIFO.md)
+- [`Return Value Optimization (RVO) and Named Return Value Optimization (NRVO)`](docs/RVO&NRVO.md)
 
+## Interesting Questions
 
+* [Why virtual member function can not be used with template?](ques/q1.md)
+* [`vector<string> v = str_split("1,2,3");` The memory will be where, why?](ques/q2.md)
 
 ## References
 

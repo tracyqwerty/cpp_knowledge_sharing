@@ -41,3 +41,25 @@ In more detail:
 - The expression `static_cast<T&&>(x)` is indeed equivalent to `std::move(x)`. It's a cast to an rvalue reference of type `T`, which allows `x` to be passed to a move constructor or move assignment operator that accepts an rvalue reference of type `T`.
 
 So in summary, `std::move` is a way to tell the compiler that an object's resources can be safely moved from, without actually performing the move operation itself. The actual move is done by the move constructor or move assignment operator of the class.
+
+![img](assets/v2-a10e15ec0fef0b578d7bf794c4c8f6ac_1440w.webp)
+
+![img](assets/v2-054c65836cb9dad817399a471386e154_1440w.webp)
+
+## Another Way of Looking
+
+`std::move` is a mechanism that can improve performance when dealing with objects that manage dynamic memory (i.e., memory on the heap), or other resources like file handles, network sockets, etc. The benefit comes from avoiding expensive deep-copy operations where all the data owned by an object is duplicated.
+
+Consider a standard container like `std::vector` or `std::string`. When these objects are copied, all the elements they contain (which are stored on the heap) are also copied. This can be an expensive operation both in terms of time and memory usage, especially for large containers.
+
+However, when these objects are moved using `std::move`, **the internal pointer to the heap memory is simply transferred from the source object to the destination object.** No actual copying of elements takes place. This is a very fast operation that doesn't depend on the size of the container.
+
+**Objects that only contain data on the stack (like built-in types or small user-defined types with only stack data members) do not benefit from move semantics in the same way.** Copying such objects is already a cheap operation, since it just involves copying a small, fixed amount of stack memory.
+
+Remember, however, that move semantics also mean that the moved-from object is left in a valid but unspecified state, and should not be used after the move except to assign it a new value, or to destroy it. This is a trade-off for the performance benefit.
+
+In summary, `std::move` and move semantics in general are primarily a performance optimization for objects that manage dynamic memory or other resources. They allow costly deep-copy operations to be replaced with cheap move operations.
+
+## Reference
+
+https://www.zhihu.com/question/22111546/answer/2590209387

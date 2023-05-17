@@ -12,6 +12,7 @@ Cpp related knowledge, powered by ChatGPT4. Contents are in English.
 * [`extern`](docs/extern.md)
 * [`static`](docs/static.md)
 * [`null`](docs/null.md)
+* [`explicit`](docs/explicit.md)
 
 
 ## STL

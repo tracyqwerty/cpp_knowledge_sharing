@@ -57,4 +57,12 @@ static void myFunction() {  // can only be accessed within myfile.cpp
 }
 ```
 
+Static variables in C++ (and in C) are stored in the .data or .bss segments of the compiled object file, similar to global variables. **However, the reason static variables cannot be accessed directly from outside their file is due to the scoping rules in the language, not the storage mechanism.**
+
+In C++, the `static` keyword when applied to a global variable or function gives it **internal linkage,** which restricts its visibility to the same source file. Even though it's stored in the object file's .data or .bss segment (which are part of the object file that could theoretically be linked with other object files), the linker respects the language's scoping rules and **does not make internal symbols available for linking with other object files.**
+
+So, while the storage location of the `static` variables and functions is part of the mechanism, the main reason is the language scoping rules specified by the `static` keyword.
+
+
+
 These are the most common uses of `static` in C++. **The keyword is essentially about defining the lifespan and visibility of a variable or function.**

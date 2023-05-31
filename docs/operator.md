@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The keyword `operator` in C++ is used in the context of operator overloading. Operator overloading allows C++ operators to have user-defined meanings on user-defined types (classes and enumerations).
+The keyword `operator` in C++ is used in the context of **operator overloading**. Operator overloading allows C++ operators to have user-defined meanings on user-defined types (classes and enumerations).
 
 Here's a brief explanation:
 
@@ -44,7 +44,7 @@ Also, while operator overloading can make your code more intuitive and easier to
 
 ## Special Case: `operator new`
 
-In C++, `operator new` is a function that is automatically called when you use the `new` keyword to dynamically allocate memory. By default, `operator new` allocates memory from the heap and returns a pointer to the start of it. This is the standard behavior of `new`:
+In C++, `operator new` is a **function** that is automatically called when you use the `new` keyword to dynamically allocate memory. By default, `operator new` allocates memory from the heap and returns a pointer to the start of it. This is the standard behavior of `new`:
 
 ```cpp
 int* p = new int; // allocate an int on the heap
@@ -54,6 +54,12 @@ Under the hood, this is calling `operator new` to perform the allocation:
 
 ```cpp
 void* operator new(std::size_t size);
+```
+
+also `operator delete`:
+
+```cpp
+void operator delete (void* ptr)
 ```
 
 This function takes as an argument the size of the memory to allocate (in bytes), and returns a pointer to the allocated memory. If the allocation fails, it throws a `std::bad_alloc` exception.

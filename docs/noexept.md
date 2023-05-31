@@ -10,7 +10,7 @@ Here are some points to remember about `noexcept`:
 
 - `noexcept` without an expression is equivalent to `noexcept(true)`.
 
-- The `const`, `volatile`, `noexcept`, and return type of a function are not part of the function signature for the purpose of overloading.
+- **The `const`, `volatile`, `noexcept`, and return type of a function are not part of the function signature for the purpose of overloading.**
 
 Here is an example:
 

@@ -1,10 +1,9 @@
 # Cpp Knowledge Sharing
-Cpp related knowledge, powered by ChatGPT4. Contents are in English. 
+Cpp related knowledge, powered by ChatGPT4. Contents are all in English. >w< Enjoy!
 
 ## Keywords
 
 * [`virtual`](docs/virtual.md)
-* [`static/dynamic/const/reinterpret_cast`](./docs/cast.md)
 * [`operator`](docs/operator.md)
 * [`const & constexpr`](docs/const&constexpr.md)
 * [`noexept`](docs/noexept.md)
@@ -13,6 +12,7 @@ Cpp related knowledge, powered by ChatGPT4. Contents are in English.
 * [`static`](docs/static.md)
 * [`null`](docs/null.md)
 * [`explicit`](docs/explicit.md)
+* [`static/dynamic/const/reinterpret_cast`](./docs/cast.md)
 
 
 ## STL
@@ -74,6 +74,6 @@ find_if, the default search algorithm.
 
 
 
-reading last left here：
+reading lastly left here：
 
 https://learn.microsoft.com/en-us/cpp/cpp/temporary-objects?view=msvc-170

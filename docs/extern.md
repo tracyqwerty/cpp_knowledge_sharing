@@ -4,7 +4,7 @@ In C++, "external" and "internal" are terms used to describe the linkage of a va
 
 ## **External linkage**
 
-Variables and functions with external linkage are visible to all translation units in a program. By default, non-`const` global variables and functions have external linkage. You can also use the `extern` keyword to explicitly declare a variable or function with external linkage. 
+Variables and functions with external linkage are visible to all translation units in a program. **By default, non-`const` global variables and functions have external linkage.** You can also use the `extern` keyword to explicitly declare a variable or function with external linkage. 
 
 For example, suppose you define a global variable in one .cpp file:
 
@@ -13,7 +13,7 @@ For example, suppose you define a global variable in one .cpp file:
 int myVar = 10;  // has external linkage by default
 ```
 
-You can then declare and use that same variable in another .cpp file:
+**You can then declare and use that same variable in another .cpp file:**
 
 ```cpp
 // File2.cpp
@@ -56,7 +56,7 @@ The following objects have internal linkage by default:
 To give a **`const`** object external linkage, declare it as **`extern`** and assign it a value:
 
 ```cpp
-extern const int value = 42;
+extern const int value = 42; 
 ```
 
 ## Reference

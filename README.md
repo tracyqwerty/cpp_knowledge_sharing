@@ -45,6 +45,8 @@ For that please refer to: [CppTemplateTutorial](https://github.com/wuye9036/CppT
 - [`Return Value Optimization (RVO) and Named Return Value Optimization (NRVO)`](docs/RVO&NRVO.md)
 - [`overload resolution`](docs/overload_resolution.md)
 - [`scope`](docs/scope.md)
+- [`list initialization`](docs/list_initialization.md)
+- [`structured binding(c++17)`](docs/structured_binding.md)
 
 ## Interesting Questions
 
@@ -58,6 +60,8 @@ For that please refer to: [CppTemplateTutorial](https://github.com/wuye9036/CppT
 ### [CS106L](CS106L)
 
 This is the official website: http://web.stanford.edu/class/cs106l/
+
+CS106L includes basic C++ knowledge. >w<
 
 ## References
 

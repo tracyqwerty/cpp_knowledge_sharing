@@ -1,3 +1,5 @@
+# Structured Binding
+
 Structured bindings, introduced in C++17, is a feature that enables you to define multiple variables that are initialized from the members of a tuple or struct. 
 
 Here is a simple example:
@@ -41,6 +43,6 @@ std::tuple<int, float, string> t = {1, 2.0, "example"};
 auto [i, _, s] = t; // i is an int, s is a string, the float is ignored
 ```
 
-In this last example, the underscore `_` is often used as a placeholder for values we don't care about. Note that `_` isn't a language feature; it's just a valid variable name that by convention signals "we're not using this value".
+In this last example, the underscore `_` is often used as a **placeholder** for values we don't care about. **Note that `_` isn't a language feature; it's just a valid variable name that by convention signals "we're not using this value".** You cannot use `auto [i, , s]` in C++. The syntax for structured bindings requires a name (or a placeholder) for every element. If you want to ignore certain values, you can use a placeholder, such as `_`.
 
 So to sum up, structured bindings are a convenient way to unpack values from tuples, pairs, and structs. They can simplify code and make it more readable, especially when working with complex data structures.

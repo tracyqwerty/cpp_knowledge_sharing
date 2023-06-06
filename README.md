@@ -54,6 +54,7 @@ For that please refer to: [CppTemplateTutorial](https://github.com/wuye9036/CppT
 * [`vector<string> v = str_split("1,2,3");` The memory will be where, why?](ques/q2.md)
 * [Can Constructors and Destructors be virtual?](ques/q3.md)
 * [What is the difference between header files `#include <X.h>` and `#include <cX>`?](ques/q4.md)
+* [Why do we have to include vector.cpp in vector.h since it's a template class?](ques/q5.md)
 
 ## Courses Recommended
 

@@ -97,6 +97,28 @@ Choosing between `static_cast` and `dynamic_cast` depends on your specific needs
 
    - You're converting from a pointer (or reference) to a base class to a pointer (or reference) to a derived class (downcasting), but you're not sure whether the base class object is a derived class object. `dynamic_cast` performs a runtime check to ensure the object is of the correct type, and returns `nullptr` (for pointers) or throws a `bad_cast` exception (for references) if the cast is not possible. This makes `dynamic_cast` safer than `static_cast` for downcasting.
 
-It's important to note that `dynamic_cast` requires the type to have at least one virtual function, otherwise the compiler cannot perform the necessary runtime type identification (RTTI).
+It's important to note that `dynamic_cast` **requires the type to have at least one virtual function**, otherwise the compiler cannot perform the necessary runtime type identification (RTTI).
 
 In general, avoid casting where possible. Good object-oriented design often eliminates the need for casting. If you find yourself frequently needing to perform downcasts, it might be a sign that your design could be improved. For example, you might be able to move the behavior you're accessing into the base class, either as a virtual function or as an implementation that's the same for all derived classes.
+
+
+
+
+
+## Applications
+
+Consider a class `MyInt` that stores an integer:
+
+```cpp
+class MyInt {
+    int value;
+public:
+    MyInt(int value) : value(value) {}
+    int getValue() { return value; }
+    const int getValue() const { return static_cast<const int>(const_cast<MyInt*>(this)->getValue()); }
+};
+```
+
+In this code, `getValue()` is a non-`const` member function that returns the value of the integer. The `const` version of `getValue()` is implemented by temporarily removing the `const` qualifier from `this`, calling the non-`const` `getValue()`, and then adding back the `const` qualifier to the returned integer.
+
+The potential issue here is that the non-`const` `getValue()` could modify `value`, and you would not know this in the `const` version because you temporarily removed the `const` qualifier. However, if you're certain that the non-`const` `getValue()` doesn't modify the object, then this approach can be acceptable.

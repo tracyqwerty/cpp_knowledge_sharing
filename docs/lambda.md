@@ -183,3 +183,60 @@ std::cout << factorial(5);  // prints "120"
 In this example, `std::function` is used to allow the lambda to capture itself by reference. The lambda calculates the factorial of a number recursively.
 
 Lambda expressions are a powerful feature in C++, and they can make your code more concise and easier to understand, especially when used with standard library algorithms. However, like all powerful tools, they should be used judiciously. Overuse of lambdas can make code difficult to understand and debug.
+
+
+
+
+
+
+
+Lambda functions in C++ can capture variables from their enclosing scope. This is specified using capture clauses. A capture clause is part of the lambda's declaration and it precedes the function's parameter list. Here's an overview of the syntax and meaning of capture clauses:
+
+1. `[=]`: Capture by value. This means that the lambda function gets a copy of each variable in the surrounding scope. Modifications to these copies do not affect the originals in the outer scope.
+
+2. `[&]`: Capture by reference. This means that the lambda function gets a reference to each variable in the surrounding scope. Any modifications made inside the lambda function directly affect the original variables.
+
+3. `[var]`: Capture `var` by value.
+
+4. `[&var]`: Capture `var` by reference.
+
+5. `[=, &var]`: Capture everything by value, but capture `var` by reference.
+
+6. `[&, var]`: Capture everything by reference, but capture `var` by value.
+
+7. `[this]`: Capture the this pointer of the enclosing class.
+
+Here's an example demonstrating different types of captures:
+
+```cpp
+#include <iostream>
+
+int main() {
+    int a = 1;
+    int b = 2;
+
+    // Capture by value
+    auto f1 = [=]() { std::cout << "a: " << a << ", b: " << b << '\n'; };
+    a = 3;
+    b = 4;
+    f1();  // Prints "a: 1, b: 2"
+
+    // Capture by reference
+    auto f2 = [&]() { std::cout << "a: " << a << ", b: " << b << '\n'; };
+    a = 5;
+    b = 6;
+    f2();  // Prints "a: 5, b: 6"
+
+    // Capture a by value and b by reference
+    auto f3 = [a, &b]() { std::cout << "a: " << a << ", b: " << b << '\n'; };
+    a = 7;
+    b = 8;
+    f3();  // Prints "a: 5, b: 8"
+
+    return 0;
+}
+```
+
+In this example, `f1` captures `a` and `b` by value, so it prints their original values even after they are modified. `f2` captures `a` and `b` by reference, so it prints their modified values. `f3` captures `a` by value and `b` by reference, so it prints `a`'s original value and `b`'s modified value.
+
+Remember, though, that because a lambda captures a variable by reference does not extend the lifetime of the variable. So if a lambda that captures by reference outlives the scope of the captured variable, it will be referring to a destroyed object, which is undefined behavior. Similarly, capturing a local variable by value and then modifying it inside the lambda doesn't affect the original variable, because the lambda works with a copy.

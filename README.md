@@ -84,7 +84,7 @@ transform, for not-in-place modification of container elements
 
 find_if, the default search algorithm.
 
-
+functors
 
 reading lastly left here：
 

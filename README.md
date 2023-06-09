@@ -25,7 +25,9 @@ Cpp related knowledge, powered by ChatGPT4. Contents are all in English. >w< Enj
 
 ### `<algorithm>`
 
-These functions are very powerful when trying to write efficient programs. Know their existence and use them when in handy, and this will save us lots of efforts.
+These functions are very powerful when trying to write efficient programs. Know their existence and use them when in handy, and this will save us lots of efforts. 
+
+Note that here's just the tip of the iceberg. For more information, you may refer to here: https://en.cppreference.com/w/cpp/algorithm
 
 #### Non-modifying sequence operations
 
@@ -207,7 +209,7 @@ These functions are very powerful when trying to write efficient programs. Know 
 
   Randomly rearrange elements in range using generator (function template)
 
-#### Partitions
+#### Partitioning operations
 
 - [**is_partitioned**](https://cplusplus.com/reference/algorithm/is_partitioned/)
 
@@ -217,9 +219,7 @@ These functions are very powerful when trying to write efficient programs. Know 
 
   Partition range in two (function template)
 
-- [**stable_partition**](https://cplusplus.com/reference/algorithm/stable_partition/)
-
-  Partition range in two - stable ordering (function template)
+- [`stable_partition`](docs/stable_partition.md) Partition range in two - stable ordering (function template)
 
 - [**partition_copy**](https://cplusplus.com/reference/algorithm/partition_copy/)
 
@@ -229,7 +229,7 @@ These functions are very powerful when trying to write efficient programs. Know 
 
   Get partition point (function template)
 
-#### Sorting
+#### Sorting operations
 
 - [`sort`](docs/sort.md)
 
@@ -259,7 +259,7 @@ These functions are very powerful when trying to write efficient programs. Know 
 
   Sort element in range (function template)
 
-#### Binary search (operating on partitioned/sorted ranges)
+#### Binary search operations (on sorted ranges)
 
 - [`lower_bound`](docs/lower_bound.md) Return iterator to lower bound (function template)
 
@@ -269,7 +269,7 @@ These functions are very powerful when trying to write efficient programs. Know 
 
 - [`binary_search`](docs/binary_search.md) Test if value exists in sorted sequence (function template)
 
-#### Merge (operating on sorted ranges)
+#### Merge operations (on sorted ranges)
 
 - [**merge**](https://cplusplus.com/reference/algorithm/merge/)
 
@@ -278,6 +278,8 @@ These functions are very powerful when trying to write efficient programs. Know 
 - [**inplace_merge**](https://cplusplus.com/reference/algorithm/inplace_merge/)
 
   Merge consecutive sorted ranges (function template)
+
+#### Set operations (on sorted ranges)
 
 - [**includes**](https://cplusplus.com/reference/algorithm/includes/)
 
@@ -299,7 +301,7 @@ These functions are very powerful when trying to write efficient programs. Know 
 
   Symmetric difference of two sorted ranges (function template)
 
-#### Heap
+#### Heap operations
 
 - [**push_heap**](https://cplusplus.com/reference/algorithm/push_heap/)
 
@@ -325,7 +327,7 @@ These functions are very powerful when trying to write efficient programs. Know 
 
   Find first element not in heap order (function template)
 
-#### Min/max
+#### Minimum/maximum operations
 
 - [`min`](https://cplusplus.com/reference/algorithm/min/) Return the smallest (function template)
 
@@ -354,6 +356,20 @@ These functions are very powerful when trying to write efficient programs. Know 
   Transform range to next permutation (function template)
 
 - [**prev_permutation**](https://cplusplus.com/reference/algorithm/prev_permutation/)
+
+
+
+
+
+#### Permutation operations
+
+
+
+### `<numeric>`
+
+#### Numeric operations
+
+* [`accumulate`](docs/accumulate.md) Sums up or folds a range of elements
 
 ## Template
 
@@ -404,7 +420,7 @@ https://learn.microsoft.com/en-us/cpp/cpp
 
 https://github.com/Light-City/CPlusPlusThings
 
-https://cplusplus.com
+https://en.cppreference.com
 
 ## TODO
 

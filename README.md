@@ -67,9 +67,7 @@ These functions are very powerful when trying to write efficient programs. Know 
 
   Count appearances of value in range (function template)
 
-- [**count_if**](https://cplusplus.com/reference/algorithm/count_if/)
-
-  Return number of elements in range satisfying condition (function template)
+- [`count_if`](docs/count_if.md) Return number of elements in range satisfying condition (function template)
 
 - [**mismatch**](https://cplusplus.com/reference/algorithm/mismatch/)
 
@@ -91,7 +89,7 @@ These functions are very powerful when trying to write efficient programs. Know 
 
   Search range for elements (function template)
 
-**Modifying sequence operations**:
+#### Modifying sequence operations
 
 - [**copy**](https://cplusplus.com/reference/algorithm/copy/)
 
@@ -181,17 +179,13 @@ These functions are very powerful when trying to write efficient programs. Know 
 
   Copy range removing values (function template)
 
-- [**unique**](https://cplusplus.com/reference/algorithm/unique/)
-
-  Remove consecutive duplicates in range (function template)
+- [`unique`](docs/unique.md) Remove consecutive duplicates in range (function template)
 
 - [**unique_copy**](https://cplusplus.com/reference/algorithm/unique_copy/)
 
   Copy range removing duplicates (function template)
 
-- [**reverse**](https://cplusplus.com/reference/algorithm/reverse/)
-
-  Reverse range (function template)
+- [`reverse`](docs/reverse.md) Reverse range (function template)
 
 - [**reverse_copy**](https://cplusplus.com/reference/algorithm/reverse_copy/)
 
@@ -213,7 +207,7 @@ These functions are very powerful when trying to write efficient programs. Know 
 
   Randomly rearrange elements in range using generator (function template)
 
-**Partitions**:
+#### Partitions
 
 - [**is_partitioned**](https://cplusplus.com/reference/algorithm/is_partitioned/)
 
@@ -235,9 +229,9 @@ These functions are very powerful when trying to write efficient programs. Know 
 
   Get partition point (function template)
 
-**Sorting**:
+#### Sorting
 
-- [**sort**](https://cplusplus.com/reference/algorithm/sort/)
+- [`sort`](docs/sort.md)
 
   Sort elements in range (function template)
 
@@ -253,7 +247,7 @@ These functions are very powerful when trying to write efficient programs. Know 
 
   Copy and partially sort range (function template)
 
-- [**is_sorted**](https://cplusplus.com/reference/algorithm/is_sorted/)
+- [`is_sorted`](docs/is_sorted.md)
 
   Check whether range is sorted (function template)
 
@@ -265,25 +259,17 @@ These functions are very powerful when trying to write efficient programs. Know 
 
   Sort element in range (function template)
 
-**Binary search** (operating on partitioned/sorted ranges):
+#### Binary search (operating on partitioned/sorted ranges)
 
-- [**lower_bound**](https://cplusplus.com/reference/algorithm/lower_bound/)
+- [`lower_bound`](docs/lower_bound.md) Return iterator to lower bound (function template)
 
-  Return iterator to lower bound (function template)
+- [`upper_bound`](docs/upper_bound.md) Return iterator to upper bound (function template)
 
-- [**upper_bound**](https://cplusplus.com/reference/algorithm/upper_bound/)
+- [`equal_range`](docs/equal_range.md) Get subrange of equal elements (function template)
 
-  Return iterator to upper bound (function template)
+- [`binary_search`](docs/binary_search.md) Test if value exists in sorted sequence (function template)
 
-- [**equal_range**](https://cplusplus.com/reference/algorithm/equal_range/)
-
-  Get subrange of equal elements (function template)
-
-- [**binary_search**](https://cplusplus.com/reference/algorithm/binary_search/)
-
-  Test if value exists in sorted sequence (function template)
-
-**Merge** (operating on sorted ranges):
+#### Merge (operating on sorted ranges)
 
 - [**merge**](https://cplusplus.com/reference/algorithm/merge/)
 
@@ -313,7 +299,7 @@ These functions are very powerful when trying to write efficient programs. Know 
 
   Symmetric difference of two sorted ranges (function template)
 
-**Heap**:
+#### Heap
 
 - [**push_heap**](https://cplusplus.com/reference/algorithm/push_heap/)
 
@@ -339,33 +325,25 @@ These functions are very powerful when trying to write efficient programs. Know 
 
   Find first element not in heap order (function template)
 
-**Min/max**:
+#### Min/max
 
-- [**min**](https://cplusplus.com/reference/algorithm/min/)
+- [`min`](https://cplusplus.com/reference/algorithm/min/) Return the smallest (function template)
 
-  Return the smallest (function template)
-
-- [**max**](https://cplusplus.com/reference/algorithm/max/)
-
-  Return the largest (function template)
+- [`max`](https://cplusplus.com/reference/algorithm/max/) Return the largest (function template)
 
 - [**minmax**](https://cplusplus.com/reference/algorithm/minmax/)
 
   Return smallest and largest elements (function template)
 
-- [**min_element**](https://cplusplus.com/reference/algorithm/min_element/)
+- [`min_element`](docs/min_element.md) Return smallest element in range (function template)
 
-  Return smallest element in range (function template)
-
-- [**max_element**](https://cplusplus.com/reference/algorithm/max_element/)
-
-  Return largest element in range (function template)
+- [`max_element`](docs/max_element.md) Return largest element in range (function template)
 
 - [**minmax_element**](https://cplusplus.com/reference/algorithm/minmax_element/)
 
   Return smallest and largest elements in range (function template)
 
-**Other**:
+#### Other
 
 - [**lexicographical_compare**](https://cplusplus.com/reference/algorithm/lexicographical_compare/)
 

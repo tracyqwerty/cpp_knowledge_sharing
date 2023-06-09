@@ -23,6 +23,360 @@ Cpp related knowledge, powered by ChatGPT4. Contents are all in English. >w< Enj
 - [`std::move`](docs/move.md)
 - [`std::unique_ptr, std::shared_ptr & std::weak_ptr`](docs/smart_ptr.md)
 
+### `<algorithm>`
+
+These functions are very powerful when trying to write efficient programs. Know their existence and use them when in handy, and this will save us lots of efforts.
+
+#### Non-modifying sequence operations
+
+- [`all_of(c++11)`](docs/all_of.md) Test condition on all elements in range (function template)
+
+- [`any_of(c++11)`](docs/any_of.md) Test if any element in range fulfills condition (function template)
+
+- [`none_of(c++11)`](docs/none_of.md) Test if no elements fulfill condition (function template)
+
+- [**for_each**](https://cplusplus.com/reference/algorithm/for_each/)
+
+  Apply function to range (function template)
+
+- [**find**](https://cplusplus.com/reference/algorithm/find/)
+
+  Find value in range (function template)
+
+- [**find_if**](https://cplusplus.com/reference/algorithm/find_if/)
+
+  Find element in range (function template)
+
+- [**find_if_not**](https://cplusplus.com/reference/algorithm/find_if_not/)
+
+  Find element in range (negative condition) (function template)
+
+- [**find_end**](https://cplusplus.com/reference/algorithm/find_end/)
+
+  Find last subsequence in range (function template)
+
+- [**find_first_of**](https://cplusplus.com/reference/algorithm/find_first_of/)
+
+  Find element from set in range (function template)
+
+- [**adjacent_find**](https://cplusplus.com/reference/algorithm/adjacent_find/)
+
+  Find equal adjacent elements in range (function template)
+
+- [**count**](https://cplusplus.com/reference/algorithm/count/)
+
+  Count appearances of value in range (function template)
+
+- [**count_if**](https://cplusplus.com/reference/algorithm/count_if/)
+
+  Return number of elements in range satisfying condition (function template)
+
+- [**mismatch**](https://cplusplus.com/reference/algorithm/mismatch/)
+
+  Return first position where two ranges differ (function template)
+
+- [**equal**](https://cplusplus.com/reference/algorithm/equal/)
+
+  Test whether the elements in two ranges are equal (function template)
+
+- [**is_permutation**](https://cplusplus.com/reference/algorithm/is_permutation/)
+
+  Test whether range is permutation of another (function template)
+
+- [**search**](https://cplusplus.com/reference/algorithm/search/)
+
+  Search range for subsequence (function template)
+
+- [**search_n**](https://cplusplus.com/reference/algorithm/search_n/)
+
+  Search range for elements (function template)
+
+**Modifying sequence operations**:
+
+- [**copy**](https://cplusplus.com/reference/algorithm/copy/)
+
+  Copy range of elements (function template)
+
+- [**copy_n**](https://cplusplus.com/reference/algorithm/copy_n/)
+
+  Copy elements (function template)
+
+- [**copy_if**](https://cplusplus.com/reference/algorithm/copy_if/)
+
+  Copy certain elements of range (function template)
+
+- [**copy_backward**](https://cplusplus.com/reference/algorithm/copy_backward/)
+
+  Copy range of elements backward (function template)
+
+- [**move**](https://cplusplus.com/reference/algorithm/move/)
+
+  Move range of elements (function template)
+
+- [**move_backward**](https://cplusplus.com/reference/algorithm/move_backward/)
+
+  Move range of elements backward (function template)
+
+- [**swap**](https://cplusplus.com/reference/algorithm/swap/)
+
+  Exchange values of two objects (function template)
+
+- [**swap_ranges**](https://cplusplus.com/reference/algorithm/swap_ranges/)
+
+  Exchange values of two ranges (function template)
+
+- [**iter_swap**](https://cplusplus.com/reference/algorithm/iter_swap/)
+
+  Exchange values of objects pointed to by two iterators (function template)
+
+- [**transform**](https://cplusplus.com/reference/algorithm/transform/)
+
+  Transform range (function template)
+
+- [**replace**](https://cplusplus.com/reference/algorithm/replace/)
+
+  Replace value in range (function template)
+
+- [**replace_if**](https://cplusplus.com/reference/algorithm/replace_if/)
+
+  Replace values in range (function template)
+
+- [**replace_copy**](https://cplusplus.com/reference/algorithm/replace_copy/)
+
+  Copy range replacing value (function template)
+
+- [**replace_copy_if**](https://cplusplus.com/reference/algorithm/replace_copy_if/)
+
+  Copy range replacing value (function template)
+
+- [**fill**](https://cplusplus.com/reference/algorithm/fill/)
+
+  Fill range with value (function template)
+
+- [**fill_n**](https://cplusplus.com/reference/algorithm/fill_n/)
+
+  Fill sequence with value (function template)
+
+- [**generate**](https://cplusplus.com/reference/algorithm/generate/)
+
+  Generate values for range with function (function template)
+
+- [**generate_n**](https://cplusplus.com/reference/algorithm/generate_n/)
+
+  Generate values for sequence with function (function template)
+
+- [**remove**](https://cplusplus.com/reference/algorithm/remove/)
+
+  Remove value from range (function template)
+
+- [**remove_if**](https://cplusplus.com/reference/algorithm/remove_if/)
+
+  Remove elements from range (function template)
+
+- [**remove_copy**](https://cplusplus.com/reference/algorithm/remove_copy/)
+
+  Copy range removing value (function template)
+
+- [**remove_copy_if**](https://cplusplus.com/reference/algorithm/remove_copy_if/)
+
+  Copy range removing values (function template)
+
+- [**unique**](https://cplusplus.com/reference/algorithm/unique/)
+
+  Remove consecutive duplicates in range (function template)
+
+- [**unique_copy**](https://cplusplus.com/reference/algorithm/unique_copy/)
+
+  Copy range removing duplicates (function template)
+
+- [**reverse**](https://cplusplus.com/reference/algorithm/reverse/)
+
+  Reverse range (function template)
+
+- [**reverse_copy**](https://cplusplus.com/reference/algorithm/reverse_copy/)
+
+  Copy range reversed (function template)
+
+- [**rotate**](https://cplusplus.com/reference/algorithm/rotate/)
+
+  Rotate left the elements in range (function template)
+
+- [**rotate_copy**](https://cplusplus.com/reference/algorithm/rotate_copy/)
+
+  Copy range rotated left (function template)
+
+- [**random_shuffle**](https://cplusplus.com/reference/algorithm/random_shuffle/)
+
+  Randomly rearrange elements in range (function template)
+
+- [**shuffle**](https://cplusplus.com/reference/algorithm/shuffle/)
+
+  Randomly rearrange elements in range using generator (function template)
+
+**Partitions**:
+
+- [**is_partitioned**](https://cplusplus.com/reference/algorithm/is_partitioned/)
+
+  Test whether range is partitioned (function template)
+
+- [**partition**](https://cplusplus.com/reference/algorithm/partition/)
+
+  Partition range in two (function template)
+
+- [**stable_partition**](https://cplusplus.com/reference/algorithm/stable_partition/)
+
+  Partition range in two - stable ordering (function template)
+
+- [**partition_copy**](https://cplusplus.com/reference/algorithm/partition_copy/)
+
+  Partition range into two (function template)
+
+- [**partition_point**](https://cplusplus.com/reference/algorithm/partition_point/)
+
+  Get partition point (function template)
+
+**Sorting**:
+
+- [**sort**](https://cplusplus.com/reference/algorithm/sort/)
+
+  Sort elements in range (function template)
+
+- [**stable_sort**](https://cplusplus.com/reference/algorithm/stable_sort/)
+
+  Sort elements preserving order of equivalents (function template)
+
+- [**partial_sort**](https://cplusplus.com/reference/algorithm/partial_sort/)
+
+  Partially sort elements in range (function template)
+
+- [**partial_sort_copy**](https://cplusplus.com/reference/algorithm/partial_sort_copy/)
+
+  Copy and partially sort range (function template)
+
+- [**is_sorted**](https://cplusplus.com/reference/algorithm/is_sorted/)
+
+  Check whether range is sorted (function template)
+
+- [**is_sorted_until**](https://cplusplus.com/reference/algorithm/is_sorted_until/)
+
+  Find first unsorted element in range (function template)
+
+- [**nth_element**](https://cplusplus.com/reference/algorithm/nth_element/)
+
+  Sort element in range (function template)
+
+**Binary search** (operating on partitioned/sorted ranges):
+
+- [**lower_bound**](https://cplusplus.com/reference/algorithm/lower_bound/)
+
+  Return iterator to lower bound (function template)
+
+- [**upper_bound**](https://cplusplus.com/reference/algorithm/upper_bound/)
+
+  Return iterator to upper bound (function template)
+
+- [**equal_range**](https://cplusplus.com/reference/algorithm/equal_range/)
+
+  Get subrange of equal elements (function template)
+
+- [**binary_search**](https://cplusplus.com/reference/algorithm/binary_search/)
+
+  Test if value exists in sorted sequence (function template)
+
+**Merge** (operating on sorted ranges):
+
+- [**merge**](https://cplusplus.com/reference/algorithm/merge/)
+
+  Merge sorted ranges (function template)
+
+- [**inplace_merge**](https://cplusplus.com/reference/algorithm/inplace_merge/)
+
+  Merge consecutive sorted ranges (function template)
+
+- [**includes**](https://cplusplus.com/reference/algorithm/includes/)
+
+  Test whether sorted range includes another sorted range (function template)
+
+- [**set_union**](https://cplusplus.com/reference/algorithm/set_union/)
+
+  Union of two sorted ranges (function template)
+
+- [**set_intersection**](https://cplusplus.com/reference/algorithm/set_intersection/)
+
+  Intersection of two sorted ranges (function template)
+
+- [**set_difference**](https://cplusplus.com/reference/algorithm/set_difference/)
+
+  Difference of two sorted ranges (function template)
+
+- [**set_symmetric_difference**](https://cplusplus.com/reference/algorithm/set_symmetric_difference/)
+
+  Symmetric difference of two sorted ranges (function template)
+
+**Heap**:
+
+- [**push_heap**](https://cplusplus.com/reference/algorithm/push_heap/)
+
+  Push element into heap range (function template)
+
+- [**pop_heap**](https://cplusplus.com/reference/algorithm/pop_heap/)
+
+  Pop element from heap range (function template)
+
+- [**make_heap**](https://cplusplus.com/reference/algorithm/make_heap/)
+
+  Make heap from range (function template)
+
+- [**sort_heap**](https://cplusplus.com/reference/algorithm/sort_heap/)
+
+  Sort elements of heap (function template)
+
+- [**is_heap**](https://cplusplus.com/reference/algorithm/is_heap/)
+
+  Test if range is heap (function template)
+
+- [**is_heap_until**](https://cplusplus.com/reference/algorithm/is_heap_until/)
+
+  Find first element not in heap order (function template)
+
+**Min/max**:
+
+- [**min**](https://cplusplus.com/reference/algorithm/min/)
+
+  Return the smallest (function template)
+
+- [**max**](https://cplusplus.com/reference/algorithm/max/)
+
+  Return the largest (function template)
+
+- [**minmax**](https://cplusplus.com/reference/algorithm/minmax/)
+
+  Return smallest and largest elements (function template)
+
+- [**min_element**](https://cplusplus.com/reference/algorithm/min_element/)
+
+  Return smallest element in range (function template)
+
+- [**max_element**](https://cplusplus.com/reference/algorithm/max_element/)
+
+  Return largest element in range (function template)
+
+- [**minmax_element**](https://cplusplus.com/reference/algorithm/minmax_element/)
+
+  Return smallest and largest elements in range (function template)
+
+**Other**:
+
+- [**lexicographical_compare**](https://cplusplus.com/reference/algorithm/lexicographical_compare/)
+
+  Lexicographical less-than comparison (function template)
+
+- [**next_permutation**](https://cplusplus.com/reference/algorithm/next_permutation/)
+
+  Transform range to next permutation (function template)
+
+- [**prev_permutation**](https://cplusplus.com/reference/algorithm/prev_permutation/)
+
 ## Template
 
 Just some basic ideas. It doesn't cover Template Metaprogramming. 
@@ -64,13 +418,15 @@ This is the official website: http://web.stanford.edu/class/cs106l/
 
 CS106L includes basic C++ knowledge. >w<
 
+Think the mannual's great. Haven't read it though(.
+
 ## References
 
 https://learn.microsoft.com/en-us/cpp/cpp
 
 https://github.com/Light-City/CPlusPlusThings
 
-
+https://cplusplus.com
 
 ## TODO
 

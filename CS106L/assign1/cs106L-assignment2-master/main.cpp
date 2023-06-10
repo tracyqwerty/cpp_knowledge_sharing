@@ -78,11 +78,15 @@ vector<string> findWikiLadder(const string &start_page,
   auto cmp_fn = [&w, &target_set](const vector<string> &left,
                                   const vector<string> &right) {
     // replace all of these lines.
-    (void)w;
-    (void)target_set;
-    (void)left;
-    (void)right;
-    return false; // replace this line! make sure to use numCommonLinks.
+    // (void)w;
+    // (void)target_set;
+    // (void)left;
+    // (void)right;
+    // return false; // replace this line! make sure to use numCommonLinks.
+    auto left_links = w.getLinkSet(left.back());
+    auto right_links = w.getLinkSet(right.back());
+    return numCommonLinks(target_set, left_links) <
+           numCommonLinks(target_set, right_links);
   };
   // END STUDENT CODE HERE
   ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -97,9 +101,11 @@ vector<string> findWikiLadder(const string &start_page,
   // something like priority_queue<...> queue(...);
   // please delete ALL 4 of these lines! they are here just for the code to
   // compile.
-  std::priority_queue<vector<string>> queue;
-  throw std::invalid_argument("Not implemented yet.\n");
-  return {};
+  // std::priority_queue<vector<string>> queue;
+  std::priority_queue<vector<string>, container, decltype(cmp_fn)> queue(
+      cmp_fn);
+  // throw std::invalid_argument("Not implemented yet.\n");
+  // return {};
 
   // END STUDENT CODE HERE
   ///////////////////////////////////////////////////////////////////////////////////////////////////

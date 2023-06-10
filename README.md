@@ -18,16 +18,22 @@ Cpp related knowledge, powered by ChatGPT4. Contents are all in English. >w< Enj
 
 ## STL
 
+These are very powerful when trying to write efficient programs. Know their existence and use them when in handy, and this will save us lots of efforts. 
+
+Note that here's just the tip of the iceberg. For more information, you may refer to here: https://en.cppreference.com
+
+
+
 - [`std::function`](docs/function.md)
 - [`std::bind`](docs/bind.md)
 - [`std::move`](docs/move.md)
 - [`std::unique_ptr, std::shared_ptr & std::weak_ptr`](docs/smart_ptr.md)
 
+### `<queue>`
+
+* [`priority_queue`](docs/priority_queue.md)
+
 ### `<algorithm>`
-
-These functions are very powerful when trying to write efficient programs. Know their existence and use them when in handy, and this will save us lots of efforts. 
-
-Note that here's just the tip of the iceberg. For more information, you may refer to here: https://en.cppreference.com/w/cpp/algorithm
 
 #### Non-modifying sequence operations
 

@@ -43,9 +43,7 @@ Note that here's just the tip of the iceberg. For more information, you may refe
 
 - [`none_of(c++11)`](docs/none_of.md) Test if no elements fulfill condition (function template)
 
-- [**for_each**](https://cplusplus.com/reference/algorithm/for_each/)
-
-  Apply function to range (function template)
+- [`for_each`](docs/for_each.md) Apply function to range (function template)
 
 - [**find**](https://cplusplus.com/reference/algorithm/find/)
 
@@ -412,9 +410,11 @@ For that please refer to: [CppTemplateTutorial](https://github.com/wuye9036/CppT
 
 ## Courses Recommended
 
-### [CS106L](CS106L)
+### CS106L
 
 This is the official website: http://web.stanford.edu/class/cs106l/
+
+[And also my implementation](CS106L)
 
 CS106L includes basic C++ knowledge. >w<
 

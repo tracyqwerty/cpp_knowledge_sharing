@@ -1,6 +1,6 @@
 #include <cpr/cpr.h>
 #include <iostream>
-
+#include <string>
 int main() {
   // TODO: fix the ssl problem.
   /*
@@ -10,8 +10,16 @@ int main() {
     Error message: LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to
     en.wikipedia.org:443
   */
-  cpr::Response r = cpr::Get(cpr::Url{"https://baike.baidu.com/"});
-  // cpr::Get(cpr::Url{"https://en.wikipedia.org/wiki/Main_Page"});
+  std::string url = "https://en.wikipedia.org/wiki/Main_Page";
+  cpr::Proxies proxies{{"http", "http://127.0.0.1:7890"},
+                       {"https", "http://127.0.0.1:7890"}};
+
+  // Create a cpr::Session object and set the proxies
+  cpr::Session session;
+  session.SetProxies(proxies);
+  session.SetUrl(cpr::Url{url});
+  // cpr::Response r = cpr::Get(cpr::Url{"https://baike.baidu.com/"});
+  cpr::Response r = session.Get();
 
   std::cout << "Status code: " << r.status_code << std::endl;
   if (r.text.size() > 100) {

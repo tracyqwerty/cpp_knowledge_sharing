@@ -79,7 +79,9 @@
     "random": "cpp",
     "utility": "cpp",
     "*.tcc": "cpp",
-    "cinttypes": "cpp"
+    "cinttypes": "cpp",
+    "any": "cpp",
+    "stack": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "clang",
   "C_Cpp_Runner.cppCompilerPath": "clang++",

@@ -155,7 +155,17 @@ string WikiScraper::getPageSource(const string &page_name) {
     // QtCreator, we had a whole separate assignment for making sure an
     // alternate Internet Library (not cpr) was working on your personal pc.
     // look how simple it is now!
-    cpr::Response r = cpr::Get(cpr::Url{url});
+    cpr::Proxies proxies{{"http", "http://127.0.0.1:7890"},
+                         {"https", "http://127.0.0.1:7890"}};
+
+    // Create a cpr::Session object and set the proxies
+    cpr::Session session;
+    session.SetProxies(proxies);
+    session.SetUrl(cpr::Url{url});
+
+    // Make the GET request using the session
+    cpr::Response r = session.Get();
+    // cpr::Response r = cpr::Get(cpr::Url{url});
 
     string ret = r.text;
     if (r.status_code != 200) {

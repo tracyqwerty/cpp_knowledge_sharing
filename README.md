@@ -22,8 +22,6 @@ These are very powerful when trying to write efficient programs. Know their exis
 
 Note that here's just the tip of the iceberg. For more information, you may refer to here: https://en.cppreference.com
 
-
-
 - [`std::function`](docs/function.md)
 - [`std::bind`](docs/bind.md)
 - [`std::move`](docs/move.md)
@@ -45,9 +43,7 @@ Note that here's just the tip of the iceberg. For more information, you may refe
 
 - [`for_each`](docs/for_each.md) Apply function to range (function template)
 
-- [**find**](https://cplusplus.com/reference/algorithm/find/)
-
-  Find value in range (function template)
+- [`find`](https://cplusplus.com/reference/algorithm/find/) Find value in range (function template)
 
 - [**find_if**](https://cplusplus.com/reference/algorithm/find_if/)
 
@@ -239,10 +235,6 @@ Note that here's just the tip of the iceberg. For more information, you may refe
 
   Sort elements in range (function template)
 
-- [**stable_sort**](https://cplusplus.com/reference/algorithm/stable_sort/)
-
-  Sort elements preserving order of equivalents (function template)
-
 - [**partial_sort**](https://cplusplus.com/reference/algorithm/partial_sort/)
 
   Partially sort elements in range (function template)
@@ -305,49 +297,19 @@ Note that here's just the tip of the iceberg. For more information, you may refe
 
   Symmetric difference of two sorted ranges (function template)
 
-#### Heap operations
-
-- [**push_heap**](https://cplusplus.com/reference/algorithm/push_heap/)
-
-  Push element into heap range (function template)
-
-- [**pop_heap**](https://cplusplus.com/reference/algorithm/pop_heap/)
-
-  Pop element from heap range (function template)
-
-- [**make_heap**](https://cplusplus.com/reference/algorithm/make_heap/)
-
-  Make heap from range (function template)
-
-- [**sort_heap**](https://cplusplus.com/reference/algorithm/sort_heap/)
-
-  Sort elements of heap (function template)
-
-- [**is_heap**](https://cplusplus.com/reference/algorithm/is_heap/)
-
-  Test if range is heap (function template)
-
-- [**is_heap_until**](https://cplusplus.com/reference/algorithm/is_heap_until/)
-
-  Find first element not in heap order (function template)
-
 #### Minimum/maximum operations
 
 - [`min`](https://cplusplus.com/reference/algorithm/min/) Return the smallest (function template)
 
 - [`max`](https://cplusplus.com/reference/algorithm/max/) Return the largest (function template)
 
-- [**minmax**](https://cplusplus.com/reference/algorithm/minmax/)
-
-  Return smallest and largest elements (function template)
+- [**minmax**](https://cplusplus.com/reference/algorithm/minmax/) Return smallest and largest elements (function template)
 
 - [`min_element`](docs/min_element.md) Return smallest element in range (function template)
 
 - [`max_element`](docs/max_element.md) Return largest element in range (function template)
 
-- [**minmax_element**](https://cplusplus.com/reference/algorithm/minmax_element/)
-
-  Return smallest and largest elements in range (function template)
+- [**minmax_element**](https://cplusplus.com/reference/algorithm/minmax_element/) Return smallest and largest elements in range (function template)
 
 #### Other
 
@@ -361,13 +323,7 @@ Note that here's just the tip of the iceberg. For more information, you may refe
 
 - [**prev_permutation**](https://cplusplus.com/reference/algorithm/prev_permutation/)
 
-
-
-
-
 #### Permutation operations
-
-
 
 ### `<numeric>`
 
@@ -407,6 +363,9 @@ For that please refer to: [CppTemplateTutorial](https://github.com/wuye9036/CppT
 * [Can Constructors and Destructors be virtual?](ques/q3.md)
 * [What is the difference between header files `#include <X.h>` and `#include <cX>`?](ques/q4.md)
 * [Why do we have to include vector.cpp in vector.h since it's a template class?](ques/q5.md)
+* [Is there a reason to use std::distance() over iterator::operator-()?](ques/q6.md)
+* [What is the difference between 'typedef' and 'using' in C++11?](ques/q7.md)
+* [What is string::npos in C++?](ques/q8.md)
 
 ## Courses Recommended
 
@@ -427,6 +386,8 @@ https://learn.microsoft.com/en-us/cpp/cpp
 https://github.com/Light-City/CPlusPlusThings
 
 https://en.cppreference.com
+
+https://github.com/wuye9036/CppTemplateTutorial
 
 ## TODO
 

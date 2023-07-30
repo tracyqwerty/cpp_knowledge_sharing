@@ -355,6 +355,7 @@ For that please refer to: [CppTemplateTutorial](https://github.com/wuye9036/CppT
 - [`scope`](docs/scope.md)
 - [`list initialization`](docs/list_initialization.md)
 - [`structured binding(c++17)`](docs/structured_binding.md)
+- [`if and switch with initializers`](docs/if_and_switch.md)
 
 ## Interesting Questions
 

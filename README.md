@@ -14,6 +14,7 @@ Cpp related knowledge, powered by ChatGPT4. Contents are all in English. >w< Enj
 * [`explicit`](docs/explicit.md)
 * [`static/dynamic/const/reinterpret_cast`](./docs/cast.md)
 * [`inline`](docs/inline.md)
+* [`decltype`](docs/decltype.md)
 
 
 ## STL

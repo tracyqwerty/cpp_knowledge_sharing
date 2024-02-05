@@ -17,7 +17,7 @@ Cpp related knowledge, powered by ChatGPT4. Contents are all in English. >w< Enj
 * [`decltype`](docs/decltype.md)
 
 
-## STL
+## STL 
 
 These are very powerful when trying to write efficient programs. Know their existence and use them when in handy, and this will save us lots of efforts. 
 
@@ -369,15 +369,15 @@ For that please refer to: [CppTemplateTutorial](https://github.com/wuye9036/CppT
 * [What is the difference between 'typedef' and 'using' in C++11?](ques/q7.md)
 * [What is string::npos in C++?](ques/q8.md)
 
-## Courses Recommended
+## Courses
 
 ### CS106L
 
-This is the official website: http://web.stanford.edu/class/cs106l/
+Official website: http://web.stanford.edu/class/cs106l/
 
 [And also my implementation](CS106L)
 
-CS106L includes basic C++ knowledge. >w<
+CS106L includes just basic C++ knowledge. >w<
 
 Think the mannual's great. Haven't read it though(.
 

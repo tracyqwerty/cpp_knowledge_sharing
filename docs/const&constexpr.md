@@ -1,4 +1,4 @@
-# Const & Constexpr
+# `const` & `constexpr`
 
 `const` and `constexpr` are both keywords in C++ used to define constant values, but they are used in different contexts and have different implications.
 
@@ -12,6 +12,25 @@ Here is an example of using `const`:
 const int daysInWeek = 7;
 daysInWeek = 8; // Error, daysInWeek is const and cannot be changed
 ```
+
+Also, it can be used to declare a `const` function. A `const` function is a member function of a class that guarantees not to modify the object on which it is called. This means that **a `const` function can be called on any type of object, const or non-const, but it cannot modify any non-static data members or call any non-const member functions.**
+
+```cpp
+class MyClass {
+public:
+    int getValue() const {
+      	shared_value += 1; // can be modified
+        return value;
+    }
+    // Other members...
+private:
+    int value;
+  	static int shared_value;
+};
+int MyClass::shared_value = 0;
+```
+
+In C++, static member variables have a unique property: they are shared by all instances of a class, rather than each instance having its own copy. Despite **a member function being `const`, indicating it will not modify the state of the object it is called on,** a static member variable is not part of the state of any single object. Therefore, a `const` member function can modify static member variables without violating its contract of not modifying the object's state.
 
 ## `constexpr`
 

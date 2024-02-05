@@ -1,4 +1,4 @@
-# Inline
+# `inline`
 
 The `inline` keyword in C and C++ is a suggestion to the compiler to replace function calls with the function's code (body) to potentially increase a program's performance.
 

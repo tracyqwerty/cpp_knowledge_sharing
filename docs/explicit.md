@@ -1,4 +1,4 @@
-# explicit
+# `explicit`
 
 The `explicit` keyword in C++ is used to prevent implicit conversions or copy-initializations. It is mainly used with a class's constructor.
 

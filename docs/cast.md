@@ -1,4 +1,4 @@
-# Type casting
+# Type Casting
 
 In C++, casting is a way of telling the compiler that you intend to treat an object of one type as though it were another type. There are several different types of casts in C++.
 

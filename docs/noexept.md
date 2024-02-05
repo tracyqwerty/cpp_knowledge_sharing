@@ -1,6 +1,6 @@
 # `noexept`
 
-The `noexcept` keyword is a part of the function declaration in C++ which tells the compiler that the function does not throw any exceptions. This information can be used by the compiler to optimize the code. 
+The `noexcept` keyword is a part of the function declaration in C++ which **tells the compiler that the function does not throw any exceptions**. This information can be used by the compiler to optimize the code. 
 
 Here are some points to remember about `noexcept`:
 

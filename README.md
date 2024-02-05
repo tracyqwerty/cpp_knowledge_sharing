@@ -12,11 +12,6 @@ Cpp related knowledge, powered by ChatGPT4. Contents are all in English. >w< Enj
 * [`extern`](docs/extern.md)
 * [`using`](docs/using.md)
 * [`typedef`](docs/typedef.md)
-
-
-
-
-
 * [`operator`](docs/operator.md)
 * [`noexept`](docs/noexept.md)
 * [`volatile`](docs/volatile.md)
@@ -373,6 +368,7 @@ For that please refer to: [CppTemplateTutorial](https://github.com/wuye9036/CppT
 * [Is there a reason to use std::distance() over iterator::operator-()?](ques/q6.md)
 * [What is the difference between 'typedef' and 'using' in C++11?](ques/q7.md)
 * [What is string::npos in C++?](ques/q8.md)
+* [Can a static member function be const? ](ques/q9.md)
 
 ## Courses
 
@@ -385,6 +381,12 @@ Official website: http://web.stanford.edu/class/cs106l/
 CS106L includes just basic C++ knowledge. >w<
 
 Think the mannual's great. Haven't read it though(.
+
+### MPCS 51045
+
+Official website: https://mpcs-courses.cs.uchicago.edu/2022-23/spring/courses/mpcs-51045-1
+
+Advanced cpp course from Uchicago.
 
 ## References
 

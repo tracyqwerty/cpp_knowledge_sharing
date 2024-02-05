@@ -1,4 +1,4 @@
-# Virtual
+# `virtual`
 
 In C++, the `virtual` keyword is used to allow a member function of the base class to be **overridden** in a derived class. It's a key part of implementing "polymorphism", one of the primary principles of Object-Oriented Programming (OOP).
 

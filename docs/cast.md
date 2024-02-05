@@ -1,4 +1,4 @@
-# Type Casting
+# Type casting
 
 In C++, casting is a way of telling the compiler that you intend to treat an object of one type as though it were another type. There are several different types of casts in C++.
 
@@ -100,10 +100,6 @@ Choosing between `static_cast` and `dynamic_cast` depends on your specific needs
 It's important to note that `dynamic_cast` **requires the type to have at least one virtual function**, otherwise the compiler cannot perform the necessary runtime type identification (RTTI).
 
 In general, avoid casting where possible. Good object-oriented design often eliminates the need for casting. If you find yourself frequently needing to perform downcasts, it might be a sign that your design could be improved. For example, you might be able to move the behavior you're accessing into the base class, either as a virtual function or as an implementation that's the same for all derived classes.
-
-
-
-
 
 ## Applications
 

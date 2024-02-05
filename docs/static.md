@@ -1,4 +1,4 @@
-# static
+# Static
 
 In C++, the `static` keyword has a few different meanings depending on the context in which it's used. Here are the main usages:
 

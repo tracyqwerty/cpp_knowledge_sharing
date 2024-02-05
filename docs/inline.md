@@ -1,4 +1,4 @@
-# `inline`
+# Inline
 
 The `inline` keyword in C and C++ is a suggestion to the compiler to replace function calls with the function's code (body) to potentially increase a program's performance.
 
@@ -22,7 +22,7 @@ The compiler will transform it into:
 int biggest = (x > y) ? x : y;
 ```
 
-This can save the overhead of a function call, including saving variables, setting up the stack frame, jumping to a different part of code, and returning. 
+This can **save the overhead of a function call, including saving variables, setting up the stack frame, jumping to a different part of code, and returning**. 
 
 However, `inline` is merely a suggestion to the compiler. The compiler may choose not to inline a function for several reasons such as function complexity, size, and the potential for code bloat.
 

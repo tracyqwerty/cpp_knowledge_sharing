@@ -4,16 +4,23 @@ Cpp related knowledge, powered by ChatGPT4. Contents are all in English. >w< Enj
 ## Keywords
 
 * [`virtual`](docs/virtual.md)
-* [`operator`](docs/operator.md)
+* [`static`](docs/static.md)
+* [`inline`](docs/inline.md)
+* [`static/dynamic/const/reinterpret_cast`](./docs/cast.md)
 * [`const & constexpr`](docs/const&constexpr.md)
+* [`NULL & nullptr`](docs/null.md)
+* [`extern`](docs/extern.md)
+* [`using`](docs/using.md)
+* [`typedef`](docs/typedef.md)
+
+
+
+
+
+* [`operator`](docs/operator.md)
 * [`noexept`](docs/noexept.md)
 * [`volatile`](docs/volatile.md)
-* [`extern`](docs/extern.md)
-* [`static`](docs/static.md)
-* [`null`](docs/null.md)
 * [`explicit`](docs/explicit.md)
-* [`static/dynamic/const/reinterpret_cast`](./docs/cast.md)
-* [`inline`](docs/inline.md)
 * [`decltype`](docs/decltype.md)
 
 
@@ -324,10 +331,6 @@ Note that here's just the tip of the iceberg. For more information, you may refe
 
 - [**prev_permutation**](https://cplusplus.com/reference/algorithm/prev_permutation/)
 
-#### Permutation operations
-
-### `<numeric>`
-
 #### Numeric operations
 
 * [`accumulate`](docs/accumulate.md) Sums up or folds a range of elements
@@ -357,6 +360,8 @@ For that please refer to: [CppTemplateTutorial](https://github.com/wuye9036/CppT
 - [`list initialization`](docs/list_initialization.md)
 - [`structured binding(c++17)`](docs/structured_binding.md)
 - [`if and switch with initializers`](docs/if_and_switch.md)
+- [template aliasing](docs/template_aliasing.md)
+- [private/public/protected inheritance](docs/inheritance.md)
 
 ## Interesting Questions
 
@@ -375,7 +380,7 @@ For that please refer to: [CppTemplateTutorial](https://github.com/wuye9036/CppT
 
 Official website: http://web.stanford.edu/class/cs106l/
 
-[And also my implementation](CS106L)
+[And also my implementation](courses/CS106L)
 
 CS106L includes just basic C++ knowledge. >w<
 

@@ -27,16 +27,34 @@ Note that here's just the tip of the iceberg. For more information, you may refe
 
 - [`std::function`](docs/function.md)
 - [`std::bind`](docs/bind.md)
-- [`std::move`](docs/move.md)
-- [`std::unique_ptr, std::shared_ptr & std::weak_ptr`](docs/smart_ptr.md)
+- [`std::unique_ptr, std::shared_ptr, std::weak_ptr & std::make_unique, std::make_shared`](docs/smart_ptr.md)
+- [`std::copy`](docs/copy.md)
+- [`std::transform`](docs/tramsform.md)
+- [`std::accumulate`](docs/accumulate.md) 
+- [`std::partial_sum`](docs/partial_sum.md)
+- [`std::adjacent_difference`](docs/adjacent_diff.md)
+- [`std::inner_product`](docs/inner_product.md)
+- [`std::itoa`](docs/itoa.md)
 
-### `<queue>`
+for mathematic functions in  <cmath>,  see: https://en.cppreference.com/w/cpp/header/cmath
+
+
+
+
+
+
+
+
+
+
+
+[`std::move`](docs/move.md)
+
+
+
+
 
 * [`priority_queue`](docs/priority_queue.md)
-
-### `<algorithm>`
-
-#### Non-modifying sequence operations
 
 - [`all_of(c++11)`](docs/all_of.md) Test condition on all elements in range (function template)
 
@@ -94,8 +112,6 @@ Note that here's just the tip of the iceberg. For more information, you may refe
 
   Search range for elements (function template)
 
-#### Modifying sequence operations
-
 - [**copy**](https://cplusplus.com/reference/algorithm/copy/)
 
   Copy range of elements (function template)
@@ -131,10 +147,6 @@ Note that here's just the tip of the iceberg. For more information, you may refe
 - [**iter_swap**](https://cplusplus.com/reference/algorithm/iter_swap/)
 
   Exchange values of objects pointed to by two iterators (function template)
-
-- [**transform**](https://cplusplus.com/reference/algorithm/transform/)
-
-  Transform range (function template)
 
 - [**replace**](https://cplusplus.com/reference/algorithm/replace/)
 
@@ -312,10 +324,6 @@ Note that here's just the tip of the iceberg. For more information, you may refe
 
 - [**prev_permutation**](https://cplusplus.com/reference/algorithm/prev_permutation/)
 
-#### Numeric operations
-
-* [`accumulate`](docs/accumulate.md) Sums up or folds a range of elements
-
 ## Template
 
 Just some basic ideas. It doesn't cover Template Metaprogramming. 
@@ -394,8 +402,6 @@ https://learn.microsoft.com/en-us/cpp/cpp/keywords-cpp?view=msvc-170
 
 for_each, the default traversal algorithm (along with range-based for loops). 
 
-transform, for not-in-place modification of container elements
-
 find_if, the default search algorithm.
 
 functors
@@ -403,3 +409,5 @@ functors
 reading lastly left here：
 
 https://learn.microsoft.com/en-us/cpp/cpp/temporary-objects?view=msvc-170
+
+STL: group functions by headers

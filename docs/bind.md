@@ -1,4 +1,4 @@
-# std::bind
+# `std::bind`
 
 `std::bind` is a standard library function in C++ that allows you to easily bind arguments to a function. The result is a function object (a functor) which can be invoked later.
 

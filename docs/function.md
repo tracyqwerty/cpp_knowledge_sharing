@@ -1,6 +1,4 @@
-# std::function
-
-## Introduction
+# `std::function`
 
 `std::function` is a general-purpose polymorphic function wrapper. The instances of `std::function` can **store, copy, and invoke any callable target** -- functions, lambda expressions, bind expressions, or other function objects, as well as pointers to member functions and pointers to data members.
 
@@ -11,8 +9,6 @@ std::function<return_type(arg_types)>
 ```
 
 Here, `return_type` is the return type of the function and `arg_types` are the argument types.
-
-## Examples
 
 Let's look at a few examples of using `std::function`.
 

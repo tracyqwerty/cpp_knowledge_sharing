@@ -212,8 +212,6 @@ Note that here's just the tip of the iceberg. For more information, you may refe
 
   Randomly rearrange elements in range using generator (function template)
 
-#### Partitioning operations
-
 - [**is_partitioned**](https://cplusplus.com/reference/algorithm/is_partitioned/)
 
   Test whether range is partitioned (function template)
@@ -231,8 +229,6 @@ Note that here's just the tip of the iceberg. For more information, you may refe
 - [**partition_point**](https://cplusplus.com/reference/algorithm/partition_point/)
 
   Get partition point (function template)
-
-#### Sorting operations
 
 - [`sort`](docs/sort.md)
 
@@ -258,8 +254,6 @@ Note that here's just the tip of the iceberg. For more information, you may refe
 
   Sort element in range (function template)
 
-#### Binary search operations (on sorted ranges)
-
 - [`lower_bound`](docs/lower_bound.md) Return iterator to lower bound (function template)
 
 - [`upper_bound`](docs/upper_bound.md) Return iterator to upper bound (function template)
@@ -268,8 +262,6 @@ Note that here's just the tip of the iceberg. For more information, you may refe
 
 - [`binary_search`](docs/binary_search.md) Test if value exists in sorted sequence (function template)
 
-#### Merge operations (on sorted ranges)
-
 - [**merge**](https://cplusplus.com/reference/algorithm/merge/)
 
   Merge sorted ranges (function template)
@@ -277,8 +269,6 @@ Note that here's just the tip of the iceberg. For more information, you may refe
 - [**inplace_merge**](https://cplusplus.com/reference/algorithm/inplace_merge/)
 
   Merge consecutive sorted ranges (function template)
-
-#### Set operations (on sorted ranges)
 
 - [**includes**](https://cplusplus.com/reference/algorithm/includes/)
 
@@ -300,8 +290,6 @@ Note that here's just the tip of the iceberg. For more information, you may refe
 
   Symmetric difference of two sorted ranges (function template)
 
-#### Minimum/maximum operations
-
 - [`min`](https://cplusplus.com/reference/algorithm/min/) Return the smallest (function template)
 
 - [`max`](https://cplusplus.com/reference/algorithm/max/) Return the largest (function template)
@@ -313,8 +301,6 @@ Note that here's just the tip of the iceberg. For more information, you may refe
 - [`max_element`](docs/max_element.md) Return largest element in range (function template)
 
 - [**minmax_element**](https://cplusplus.com/reference/algorithm/minmax_element/) Return smallest and largest elements in range (function template)
-
-#### Other
 
 - [**lexicographical_compare**](https://cplusplus.com/reference/algorithm/lexicographical_compare/)
 
@@ -387,6 +373,8 @@ Think the mannual's great. Haven't read it though(.
 Official website: https://mpcs-courses.cs.uchicago.edu/2022-23/spring/courses/mpcs-51045-1
 
 Advanced cpp course from Uchicago.
+
+Password: [mac login]
 
 ## References
 

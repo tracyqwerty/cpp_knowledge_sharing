@@ -32,9 +32,14 @@ Note that here's just the tip of the iceberg. For more information, you may refe
 - [`std::transform`](docs/tramsform.md)
 - [`std::accumulate`](docs/accumulate.md) 
 - [`std::partial_sum`](docs/partial_sum.md)
+- [`sort`](docs/sort.md)
+- [`is_sorted`](docs/is_sorted.md)
+- [`partial_sort`](docs/partial_sort.md)
+- [`nth_element`](docs/nth_element.md)
 - [`std::adjacent_difference`](docs/adjacent_diff.md)
 - [`std::inner_product`](docs/inner_product.md)
 - [`std::itoa`](docs/itoa.md)
+- [`std::initializer_list`](docs/initializer_list.md)
 
 for mathematic functions in  <cmath>,  see: https://en.cppreference.com/w/cpp/header/cmath
 
@@ -242,29 +247,9 @@ for mathematic functions in  <cmath>,  see: https://en.cppreference.com/w/cpp/he
 
   Get partition point (function template)
 
-- [`sort`](docs/sort.md)
-
-  Sort elements in range (function template)
-
-- [**partial_sort**](https://cplusplus.com/reference/algorithm/partial_sort/)
-
-  Partially sort elements in range (function template)
-
-- [**partial_sort_copy**](https://cplusplus.com/reference/algorithm/partial_sort_copy/)
-
-  Copy and partially sort range (function template)
-
-- [`is_sorted`](docs/is_sorted.md)
-
-  Check whether range is sorted (function template)
-
 - [**is_sorted_until**](https://cplusplus.com/reference/algorithm/is_sorted_until/)
 
   Find first unsorted element in range (function template)
-
-- [**nth_element**](https://cplusplus.com/reference/algorithm/nth_element/)
-
-  Sort element in range (function template)
 
 - [`lower_bound`](docs/lower_bound.md) Return iterator to lower bound (function template)
 
@@ -351,6 +336,7 @@ For that please refer to: [CppTemplateTutorial](https://github.com/wuye9036/CppT
 - [`if and switch with initializers`](docs/if_and_switch.md)
 - [template aliasing](docs/template_aliasing.md)
 - [private/public/protected inheritance](docs/inheritance.md)
+- [initializer list and uniform initialization](docs/initialize.md)
 
 ## Interesting Questions
 
@@ -376,7 +362,7 @@ CS106L includes just basic C++ knowledge. >w<
 
 Think the mannual's great. Haven't read it though(.
 
-### MPCS 51045
+### MPCS 51044&5
 
 Official website: https://mpcs-courses.cs.uchicago.edu/2022-23/spring/courses/mpcs-51045-1
 
@@ -411,3 +397,5 @@ reading lastly left here：
 https://learn.microsoft.com/en-us/cpp/cpp/temporary-objects?view=msvc-170
 
 STL: group functions by headers
+
+pod:https://zhuanlan.zhihu.com/p/45545035

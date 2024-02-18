@@ -37,3 +37,10 @@ int main() {
 ```
 
 In this example, `std::accumulate` starts with an initial value of `1` and multiplies each element in the range `[numbers.begin(), numbers.end())` to it. The result is the product of all the elements in the vector. The `std::multiplies<int>()` is a predefined function object (also known as a functor) that multiplies two integers.
+
+or even:
+
+```cpp
+int acc1 = accumulate(str.begin(), str.end(), 0, [](int acc, const auto& ch){ return acc + (ch == '1' ? 1 : 0);});
+```
+

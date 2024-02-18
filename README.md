@@ -17,6 +17,7 @@ Cpp related knowledge, powered by ChatGPT4. Contents are all in English. >w< Enj
 * [`volatile`](docs/volatile.md)
 * [`explicit`](docs/explicit.md)
 * [`decltype`](docs/decltype.md)
+* [`mutable`](docs/mutable.md)
 
 
 ## STL 
@@ -28,20 +29,38 @@ Note that here's just the tip of the iceberg. For more information, you may refe
 - [`std::function`](docs/function.md)
 - [`std::bind`](docs/bind.md)
 - [`std::unique_ptr, std::shared_ptr, std::weak_ptr & std::make_unique, std::make_shared`](docs/smart_ptr.md)
+- [`std::back_inserter`](docs/back_inserter.md)
 - [`std::copy`](docs/copy.md)
 - [`std::transform`](docs/tramsform.md)
 - [`std::accumulate`](docs/accumulate.md) 
 - [`std::partial_sum`](docs/partial_sum.md)
-- [`sort`](docs/sort.md)
-- [`is_sorted`](docs/is_sorted.md)
-- [`partial_sort`](docs/partial_sort.md)
-- [`nth_element`](docs/nth_element.md)
+- [`std::sort`](docs/sort.md)
+- [`std::partial_sort`](docs/partial_sort.md)
+- [`std::nth_element`](docs/nth_element.md)
 - [`std::adjacent_difference`](docs/adjacent_diff.md)
 - [`std::inner_product`](docs/inner_product.md)
 - [`std::itoa`](docs/itoa.md)
 - [`std::initializer_list`](docs/initializer_list.md)
+- [`std::for_each`](docs/for_each.md)
+- [`std::all_of(c++11)`](docs/all_of.md) 
+- [`std::any_of(c++11)`](docs/any_of.md) 
+- [`std::none_of(c++11)`](docs/none_of.md) 
+- [`std::copy_n`](docs/copy_n.md)
+- [`std::find, std::find_if, std::find_if_not`](docs/find.md) 
+- [`std::partition, std::stable_partition, std::partition_copy`](docs/partition.md)
+- [`std::min, std::max, std::minmax`](docs/min_max.md) 
+- [`std::min_element, std::max_element, std::minmax_element`](docs/min_max_element.md) 
+- [`std::lower_bound, std::upper_bound`](docs/lower_bound.md) 
+- [`std::is_heap, std::is_heap_until`](docs/is_heap.md)
+- [`std::is_sorted, std::is_sorted_until`](docs/is_sorted.md)
 
 for mathematic functions in  <cmath>,  see: https://en.cppreference.com/w/cpp/header/cmath
+
+### std::execution
+
+* [`std::execution::seq, std::execution::unseq, std::execution::par, std::execution::par_unseq`](docs/execution.md)
+
+
 
 
 
@@ -61,23 +80,7 @@ for mathematic functions in  <cmath>,  see: https://en.cppreference.com/w/cpp/he
 
 * [`priority_queue`](docs/priority_queue.md)
 
-- [`all_of(c++11)`](docs/all_of.md) Test condition on all elements in range (function template)
-
-- [`any_of(c++11)`](docs/any_of.md) Test if any element in range fulfills condition (function template)
-
-- [`none_of(c++11)`](docs/none_of.md) Test if no elements fulfill condition (function template)
-
-- [`for_each`](docs/for_each.md) Apply function to range (function template)
-
-- [`find`](https://cplusplus.com/reference/algorithm/find/) Find value in range (function template)
-
-- [**find_if**](https://cplusplus.com/reference/algorithm/find_if/)
-
-  Find element in range (function template)
-
-- [**find_if_not**](https://cplusplus.com/reference/algorithm/find_if_not/)
-
-  Find element in range (negative condition) (function template)
+- 
 
 - [**find_end**](https://cplusplus.com/reference/algorithm/find_end/)
 
@@ -117,25 +120,9 @@ for mathematic functions in  <cmath>,  see: https://en.cppreference.com/w/cpp/he
 
   Search range for elements (function template)
 
-- [**copy**](https://cplusplus.com/reference/algorithm/copy/)
-
-  Copy range of elements (function template)
-
-- [**copy_n**](https://cplusplus.com/reference/algorithm/copy_n/)
-
-  Copy elements (function template)
-
 - [**copy_if**](https://cplusplus.com/reference/algorithm/copy_if/)
 
-  Copy certain elements of range (function template)
-
 - [**copy_backward**](https://cplusplus.com/reference/algorithm/copy_backward/)
-
-  Copy range of elements backward (function template)
-
-- [**move**](https://cplusplus.com/reference/algorithm/move/)
-
-  Move range of elements (function template)
 
 - [**move_backward**](https://cplusplus.com/reference/algorithm/move_backward/)
 
@@ -233,31 +220,13 @@ for mathematic functions in  <cmath>,  see: https://en.cppreference.com/w/cpp/he
 
   Test whether range is partitioned (function template)
 
-- [**partition**](https://cplusplus.com/reference/algorithm/partition/)
-
-  Partition range in two (function template)
-
-- [`stable_partition`](docs/stable_partition.md) Partition range in two - stable ordering (function template)
-
-- [**partition_copy**](https://cplusplus.com/reference/algorithm/partition_copy/)
-
-  Partition range into two (function template)
-
 - [**partition_point**](https://cplusplus.com/reference/algorithm/partition_point/)
 
   Get partition point (function template)
 
-- [**is_sorted_until**](https://cplusplus.com/reference/algorithm/is_sorted_until/)
-
-  Find first unsorted element in range (function template)
-
-- [`lower_bound`](docs/lower_bound.md) Return iterator to lower bound (function template)
-
-- [`upper_bound`](docs/upper_bound.md) Return iterator to upper bound (function template)
-
 - [`equal_range`](docs/equal_range.md) Get subrange of equal elements (function template)
 
-- [`binary_search`](docs/binary_search.md) Test if value exists in sorted sequence (function template)
+- [`binary_search`](docs/binary_search.md) 
 
 - [**merge**](https://cplusplus.com/reference/algorithm/merge/)
 
@@ -286,18 +255,6 @@ for mathematic functions in  <cmath>,  see: https://en.cppreference.com/w/cpp/he
 - [**set_symmetric_difference**](https://cplusplus.com/reference/algorithm/set_symmetric_difference/)
 
   Symmetric difference of two sorted ranges (function template)
-
-- [`min`](https://cplusplus.com/reference/algorithm/min/) Return the smallest (function template)
-
-- [`max`](https://cplusplus.com/reference/algorithm/max/) Return the largest (function template)
-
-- [**minmax**](https://cplusplus.com/reference/algorithm/minmax/) Return smallest and largest elements (function template)
-
-- [`min_element`](docs/min_element.md) Return smallest element in range (function template)
-
-- [`max_element`](docs/max_element.md) Return largest element in range (function template)
-
-- [**minmax_element**](https://cplusplus.com/reference/algorithm/minmax_element/) Return smallest and largest elements in range (function template)
 
 - [**lexicographical_compare**](https://cplusplus.com/reference/algorithm/lexicographical_compare/)
 
@@ -349,6 +306,7 @@ For that please refer to: [CppTemplateTutorial](https://github.com/wuye9036/CppT
 * [What is the difference between 'typedef' and 'using' in C++11?](ques/q7.md)
 * [What is string::npos in C++?](ques/q8.md)
 * [Can a static member function be const? ](ques/q9.md)
+* [What is a lambda expression under the hood?](ques/q10.md)
 
 ## Courses
 

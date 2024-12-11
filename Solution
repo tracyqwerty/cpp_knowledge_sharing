@@ -1,0 +1,2 @@
+  if i <= len(s) and 0 <= int(s[:i]) <= 255:
+        if len(str(int(s[:i]))) == i:  # Check for leading zeros 
